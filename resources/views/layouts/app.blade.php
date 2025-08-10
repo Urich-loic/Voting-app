@@ -14,7 +14,7 @@
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
-    <body class="font-sans antialiased p-4 bg-gray-200">
+    <body class="font-sans antialiased p-4 bg-gray-100">
 
         <header class="xl:w-8xl md:4xl sm:2xl mx-auto py-2">
         <div class="flex justify-between">
@@ -61,12 +61,16 @@
 
         <div class="container mx-auto xl:6xl gap-3 lg:6xl md:5xl sm:4xl">
 
-        <div class="flex xl:flex-row md:flex-row sm:flex-col xl:w-6xl md:4xl sm:2xl mx-auto pt-5">
-            <div class="basis-1/3 text-black min-h-100">
-                <form action="">
-
+        <div class="flex space-x-8 xl:flex-row md:flex-row sm:flex-col xl:w-6xl md:4xl sm:2xl mx-auto pt-5">
+            <div class="basis-1/3 bg-white rounded-xl text-center text-black min-h-100 p-5">
+                <h3 class="text-center">Add an idea</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                <form action="" class="">
+                    <input type="text">
+                    <input type="text">
+                    <textarea name="" id=""></textarea>
                 </form>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, dolor saepe iste consectetur error enim doloremque id quis nobis rerum provident animi ratione facilis omnis accusamus voluptatem ex aut quaerat.
+
             </div>
             <div class="basis-2/3 min-h-100">
                 <div class="flex flex-row justify-between">

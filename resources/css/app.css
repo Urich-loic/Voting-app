@@ -30,3 +30,8 @@
     border-color: var(--color-gray-200, currentcolor);
   }
 }
+
+
+.idea-container:hover{
+    box-shadow:0 15px 15px #00000011;
+}
