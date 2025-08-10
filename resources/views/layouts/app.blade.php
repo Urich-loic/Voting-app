@@ -62,29 +62,40 @@
         <div class="container mx-auto xl:6xl gap-3 lg:6xl md:5xl sm:4xl">
 
         <div class="flex space-x-8 xl:flex-row md:flex-row sm:flex-col xl:w-6xl md:4xl sm:2xl mx-auto pt-5">
-            <div class="basis-1/3 bg-white rounded-xl text-center text-black min-h-100 p-5">
-                <h3 class="text-center">Add an idea</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                <form action="" class="">
-                    <input type="text">
-                    <input type="text">
-                    <textarea name="" id=""></textarea>
+            <div class="xl:w-1/3 flex flex-col h-full sm:w-3/3 bg-white rounded-xl text-center text-black p-5 sm:mb-9">
+                <h3 class="text-center font-bold text-xl">Add an idea</h3>
+                <p class="pb-5">Let's know what's in your mind</p>
+                <form action="" class="space-y-3">
+                    <input type="text" name="idea" class="text-gray-500 border-none bg-gray-200 rounded-xl w-full" placeholder="Your idea">
+
+                    <select name="category" id="" class="border-none bg-gray-200 rounded-xl w-full text-gray-500">
+                        <option value="Category">Category</option>
+                        <option value="Category">Category</option>
+                        <option value="Category">Category</option>
+                        <option value="Category">Category</option>
+                    </select>
+
+                    <textarea name="idea_description" id="" class="border-none bg-gray-200 rounded-xl w-full text-gray-500" placeholder="Describe your idea"></textarea>
+                    <div class="flex items-center justify-center gap-5">
+                        <input type="file" class="bg-gray-200 xl:w-1/2 sm:w-2/2 rounded-xl p-3">
+                        <button class="text-md bg-blue-500 xl:w-1/2 sm:w-2/2 rounded-xl px-5 py-3 text-white">Submit</button>
+                    </div>
                 </form>
 
             </div>
-            <div class="basis-2/3 min-h-100">
+            <div class="xl:w-2/3 sm:w-3/3 min-h-100">
                 <div class="flex flex-row justify-between">
                         <nav class="flex items-center ">
                             <ul class="flex space-x-10 border-b-3 border-gray-300">
-                            <li class="uppercase  pb-2 text-gray-400 text-sm">All ideas (87)</li>
-                            <li class="uppercase pb-2 text-gray-400 text-sm">Considering</li>
-                            <li class="uppercase pb-2 text-gray-400 text-sm">in progress</li>
+                            <li class="uppercase md:text-xs  pb-2 text-gray-400 text-sm">All ideas (87)</li>
+                            <li class="uppercase md:text-xs pb-2 text-gray-400 text-sm">Considering</li>
+                            <li class="uppercase md:text-xs pb-2 text-gray-400 text-sm">in progress</li>
                             </ul>
                         </nav>
                          <nav class="flex items-center">
                             <ul class="flex space-x-10 border-b-3 border-gray-300">
-                            <li class="uppercase pb-2 text-gray-400 text-sm">All ideas</li>
-                            <li class="uppercase pb-2 text-gray-400 hover:text-black text-sm hover:border-b-3 transition  duration-500">Considering</li>
+                            <li class="uppercase md:text-xs pb-2 text-gray-400 text-sm">All ideas</li>
+                            <li class="uppercase pb-2 text-gray-400 hover:text-black text-sm md:text-xs hover:border-b-3 transition  duration-500">Considering</li>
                             </ul>
                         </nav>
                     </div>
